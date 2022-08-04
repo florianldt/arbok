@@ -1,0 +1,15 @@
+{
+    "root": true,
+    "env": {
+        "jest": true
+    },
+    "extends": ["airbnb-base", "prettier"],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["public", "src"],
+                "extensions": [".js", ".ts", ".d.ts"]
+            }
+        }
+    }
+}
