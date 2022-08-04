@@ -1,0 +1,520 @@
+[
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "axis",
+        "Value": 4,
+        "Name": "video",
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Name": "videoObjects",
+        "Parent": "video",
+        "Value": 1,
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoObjects",
+        "Value": 1,
+        "Name": "powerSupplyTable",
+        "Description": "Table containing information about all the power supplies\n         present in the device.",
+        "Syntax": {
+            "Name": "",
+            "Value": "PowerSupplyEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "powerSupplyTable",
+        "Value": 1,
+        "Name": "powerSupplyEntry",
+        "Description": "A power supply entry containing information about\n         a specific power supply.",
+        "Syntax": {
+            "Name": "",
+            "Value": "PowerSupplyEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "powerSupplyEntry",
+        "Value": 1,
+        "Name": "powerSupplyType",
+        "Description": "Indicates whether the power supply is mounted externally,\n         e.g. in a rack, or internally.",
+        "Syntax": {
+            "Name": "powerSupplyType",
+            "IsEnumeration": true
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "powerSupplyEntry",
+        "Value": 2,
+        "Name": "powerSupplyId",
+        "Description": "Used to identify a power supply. The powerSupplyId is unique\n         within the type, i.e. there can not be two external power\n         supplies with the same powerSupplyId. There can, however, be one\n         external and one internal that have the same powerSupplyId.",
+        "Syntax": {
+            "Name": ""
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "powerSupplyEntry",
+        "Value": 3,
+        "Name": "powerSupplyStatus",
+        "Description": "The status of a power supply.",
+        "Syntax": {
+            "Name": "powerSupplyStatus",
+            "IsEnumeration": true
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoObjects",
+        "Value": 2,
+        "Name": "fanTable",
+        "Description": "Table containing information about all the fans in the product.",
+        "Syntax": {
+            "Name": "",
+            "Value": "FanEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "fanTable",
+        "Value": 1,
+        "Name": "fanEntry",
+        "Description": "A fan entry contains information about a specific fan.",
+        "Syntax": {
+            "Name": "",
+            "Value": "FanEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "fanEntry",
+        "Value": 1,
+        "Name": "fanType",
+        "Description": "The type of the fan, i.e. where the fan is mounted.",
+        "Syntax": {
+            "Name": "fanType",
+            "IsEnumeration": true
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "fanEntry",
+        "Value": 2,
+        "Name": "fanId",
+        "Description": "Used, together with fanType, to identify a fan. The fanId is\n         unique within the type, i.e. there can not be two fans with the\n         same fanType and the same fanId.",
+        "Syntax": {
+            "Name": ""
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "fanEntry",
+        "Value": 3,
+        "Name": "fanStatus",
+        "Description": "The status of a fan.",
+        "Syntax": {
+            "Name": "fanStatus",
+            "IsEnumeration": true
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoObjects",
+        "Value": 3,
+        "Name": "tempSensorTable",
+        "Description": "Table containing information about all the temperature\n         sensors in the product.",
+        "Syntax": {
+            "Name": "",
+            "Value": "TempSensorEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "tempSensorTable",
+        "Value": 1,
+        "Name": "tempSensorEntry",
+        "Description": "A temperature sensor entry contains information about a\n         specific temperature sensor.",
+        "Syntax": {
+            "Name": "",
+            "Value": "TempSensorEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "tempSensorEntry",
+        "Value": 1,
+        "Name": "tempSensorType",
+        "Description": "The type of the temperature sensor, i.e. where it is mounted.",
+        "Syntax": {
+            "Name": "tempSensorType",
+            "IsEnumeration": true
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "tempSensorEntry",
+        "Value": 2,
+        "Name": "tempSensorId",
+        "Description": "Used, together with tempSensorType, to identify a temperature\n         sensor. The tempSensorId is unique within the type, i.e. there\n         can not be two sensors with the same tempSensorType and the same\n         tempSensorId.",
+        "Syntax": {
+            "Name": ""
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "tempSensorEntry",
+        "Value": 3,
+        "Name": "tempSensorStatus",
+        "Description": "The status of the temperature sensor.",
+        "Syntax": {
+            "Name": "tempSensorStatus",
+            "IsEnumeration": true
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "tempSensorEntry",
+        "Value": 4,
+        "Name": "tempSensorValue",
+        "Description": "The temperature measured by a specific temperature sensor.\n         The temperature is given in degrees Celsius.",
+        "Syntax": {
+            "Name": "tempSensorValue",
+            "IsEnumeration": false
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoObjects",
+        "Value": 4,
+        "Name": "videoChannelTable",
+        "Description": "A list of video channel information, one entry for each\n         physical video channel.",
+        "Syntax": {
+            "Name": "",
+            "Value": "VideoChannelEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoChannelTable",
+        "Value": 1,
+        "Name": "videoChannelEntry",
+        "Description": "A video channel entry contains information about a specific\n         physical video channel.",
+        "Syntax": {
+            "Name": "",
+            "Value": "VideoChannelEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoChannelEntry",
+        "Value": 1,
+        "Name": "videoChannelId",
+        "Description": "Used to identify a physical video channel.",
+        "Syntax": {
+            "Name": ""
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoChannelEntry",
+        "Value": 2,
+        "Name": "videoSignalStatus",
+        "Description": "The status of the video signal for a channel.",
+        "Syntax": {
+            "Name": "videoSignalStatus",
+            "IsEnumeration": true
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoObjects",
+        "Value": 5,
+        "Name": "audioChannelTable",
+        "Description": "A list of audio signal information, one entry for each\n         physical audio channel.",
+        "Syntax": {
+            "Name": "",
+            "Value": "AudioChannelEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "audioChannelTable",
+        "Value": 1,
+        "Name": "audioChannelEntry",
+        "Description": "An audio signal entry contains information about a specific\n         physical audio signal.",
+        "Syntax": {
+            "Name": "",
+            "Value": "AudioChannelEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "audioChannelEntry",
+        "Value": 1,
+        "Name": "audioChannelId",
+        "Description": "Used to identify a physical audio channel.",
+        "Syntax": {
+            "Name": ""
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "audioChannelEntry",
+        "Value": 2,
+        "Name": "audioSignalStatus",
+        "Description": "The status of the audio signal for a channel.",
+        "Syntax": {
+            "Name": "audioSignalStatus",
+            "IsEnumeration": true
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoObjects",
+        "Value": 6,
+        "Name": "casingTable",
+        "Description": "A list of casing status, one entry for each casing.",
+        "Syntax": {
+            "Name": "",
+            "Value": "CasingEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "casingTable",
+        "Value": 1,
+        "Name": "casingEntry",
+        "Description": "A casing entry contains information about a specific casing.",
+        "Syntax": {
+            "Name": "",
+            "Value": "CasingEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "casingEntry",
+        "Value": 1,
+        "Name": "casingId",
+        "Description": "Used to identify a casing.",
+        "Syntax": {
+            "Name": ""
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "casingEntry",
+        "Value": 2,
+        "Name": "casingName",
+        "Description": "Used to identify a casing. If the original string is longer than the\n         specified length then the middle of the string will be replaced by '..'\n         in such a way that the length of the string becomes 32 characters\n         anyway.",
+        "Syntax": {
+            "Name": "",
+            "Value": "SnmpAdminString"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "casingEntry",
+        "Value": 3,
+        "Name": "casingStatus",
+        "Description": "The status of the casing.",
+        "Syntax": {
+            "Name": "casingStatus",
+            "IsEnumeration": true
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoObjects",
+        "Value": 8,
+        "Name": "storageTable",
+        "Description": "A list of storage media properties, one entry for each storage media.",
+        "Syntax": {
+            "Name": "",
+            "Value": "StorageEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "storageTable",
+        "Value": 1,
+        "Name": "storageEntry",
+        "Description": "A storage media contains information about a specific medium.",
+        "Syntax": {
+            "Name": "",
+            "Value": "StorageEntry"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "storageEntry",
+        "Value": 1,
+        "Name": "storageId",
+        "Description": "Used to identify a storage.",
+        "Syntax": {
+            "Name": ""
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "storageEntry",
+        "Value": 2,
+        "Name": "storageName",
+        "Description": "Used to identify a storage medium. If the original string is longer\n\t than the specified length then the middle of the string will be\n\t replaced by '..' in such a way that the length of the string becomes 32\n         characters anyway.",
+        "Syntax": {
+            "Name": "",
+            "Value": "SnmpAdminString"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "storageEntry",
+        "Value": 3,
+        "Name": "storageDisruptionDetected",
+        "Description": "The status of the storage medium.",
+        "Syntax": {
+            "Name": "storageDisruptionDetected",
+            "IsEnumeration": true
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Name": "videoNotifications",
+        "Parent": "video",
+        "Value": 2,
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Name": "videoNotificationPrefix",
+        "Parent": "videoNotifications",
+        "Value": 0,
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoNotifications",
+        "Value": 1,
+        "Name": "alarmID",
+        "Description": "This object indentifies a certain alarm event in a unique way.\n\tThis means that there cannot be any alarm event that has the same ID\n\tduring a finite period of time.",
+        "Syntax": {
+            "Name": ""
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoNotifications",
+        "Value": 2,
+        "Name": "alarmName",
+        "Description": "A string that identifies which kind of alarm this is. During a certain\n\ttime it is possible that alarms with the same name occur.",
+        "Syntax": {
+            "Name": "",
+            "Value": "SnmpAdminString"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoNotifications",
+        "Value": 3,
+        "Name": "alarmText",
+        "Description": "Detailed description of the alarm.",
+        "Syntax": {
+            "Name": "",
+            "Value": "SnmpAdminString"
+        }
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Name": "videoConformance",
+        "Parent": "video",
+        "Value": 3,
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Name": "videoGroups",
+        "Parent": "videoConformance",
+        "Value": 1,
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Name": "videoCompliances",
+        "Parent": "videoConformance",
+        "Value": 2,
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoNotificationPrefix",
+        "Value": 1,
+        "Name": "alarmNew",
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoNotificationPrefix",
+        "Value": 2,
+        "Name": "alarmCleared",
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoNotificationPrefix",
+        "Value": 3,
+        "Name": "alarmSingle",
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoGroups",
+        "Value": 1,
+        "Name": "videoObjectGroup",
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoGroups",
+        "Value": 2,
+        "Name": "videoNotificationGroup",
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoGroups",
+        "Value": 3,
+        "Name": "tempSensorGroup",
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoGroups",
+        "Value": 4,
+        "Name": "casingGroup",
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoGroups",
+        "Value": 5,
+        "Name": "storageGroup",
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoCompliances",
+        "Value": 2,
+        "Name": "videoComplianceRev2",
+        "Description": ""
+    },
+    {
+        "ModuleName": "AXIS-VIDEO-MIB",
+        "Parent": "videoCompliances",
+        "Value": 1,
+        "Name": "videoCompliance",
+        "Description": ""
+    }
+]
