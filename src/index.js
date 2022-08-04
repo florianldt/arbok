@@ -1,1 +1,5 @@
-while (1) {}
+function toFileStructure() {
+    return '';
+}
+
+module.exports = toFileStructure;
