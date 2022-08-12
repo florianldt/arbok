@@ -3,6 +3,8 @@ services:
   app:
     build: .
     command: npm run test:watch
+    ports:
+      - '9229:9229'
     volumes:
       - ./:/usr/src/app
       - /usr/app/node_modules
