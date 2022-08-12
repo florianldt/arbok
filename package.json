@@ -7,7 +7,9 @@
         "lint": "eslint .",
         "start": "node src/index.js",
         "start:dev": "nodemon --config nodemon.json",
+        "start:inspect": "nodemon --config nodemon.inspect.json",
         "test": "jest",
+        "test:watch": "jest --watchAll",
         "prepare": "husky install"
     },
     "keywords": ["node", "docker"],
